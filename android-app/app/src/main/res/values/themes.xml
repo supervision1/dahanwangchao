@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.DreamPulse" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#7B8CFF</item>
+        <item name="colorPrimaryVariant">#5C6BE5</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+</resources>

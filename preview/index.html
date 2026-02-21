@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e1024" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <title>DreamPulse 预览界面</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="phone">
+      <header class="topbar">
+        <div>
+          <p class="muted">昨晚睡眠评分</p>
+          <h1>82 <span>+6%</span></h1>
+        </div>
+        <button id="tier-btn" class="pill">A层用户</button>
+      </header>
+
+      <section class="hero card">
+        <h2>今晚推荐：快速入睡 15 分钟</h2>
+        <p>预计可缩短入睡时长 12 分钟</p>
+        <button class="primary">开始今晚助眠</button>
+      </section>
+
+      <section class="card offer" id="offer-card">
+        <p class="tag">收入优化推荐</p>
+        <h3 id="offer-title">年费会员 + Pro 硬件组合包 + 延保</h3>
+        <p id="offer-sub">适合高价值用户，优先提升 LTV</p>
+      </section>
+
+      <section class="card metrics">
+        <h3>关键指标预览</h3>
+        <div class="grid">
+          <div><strong>D7 首购转化</strong><span>12.4%</span></div>
+          <div><strong>D14 组合包转化</strong><span>8.1%</span></div>
+          <div><strong>30日 LTV</strong><span>¥286</span></div>
+          <div><strong>退款率</strong><span>5.6%</span></div>
+        </div>
+      </section>
+
+      <nav class="tabs">
+        <button class="active">首页</button>
+        <button>程序</button>
+        <button>设备</button>
+        <button>报告</button>
+        <button>我的</button>
+      </nav>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/sw.js"));
+      }
+    </script>
+  </body>
+</html>

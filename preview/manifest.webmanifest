@@ -1,0 +1,15 @@
+{
+  "name": "DreamPulse Preview",
+  "short_name": "DreamPulse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e1024",
+  "theme_color": "#0e1024",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
